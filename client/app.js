@@ -16,7 +16,7 @@ const App = () => {
         <span className="cancelledKey">cancelled</span>
       </div>
       <Routes />
-      <div>
+      <div className="footer">
         Disclaimer: This website tracks some of the events that have been
         cancelled due to the coronavirus disease (COVID-19), along with other
         things that have been incidentally cancelled. It is not meant to be a

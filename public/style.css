@@ -21,6 +21,11 @@ form div {
   display: inline-block;
 }
 
+.footer {
+  margin-top: 50px;
+  padding: 50px;
+}
+
 .container {
   display: flex;
   flex-direction: row;

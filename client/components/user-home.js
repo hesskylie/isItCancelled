@@ -21,16 +21,16 @@ export const UserHome = props => {
 
       <h4>Followed Events:</h4>
       {props.events ? (
-        <ul>
+        <div className="container">
           {props.events.map(event => (
-            <div key={event.id}>
-              <li>{event.name}</li>
+            <div key={event.id} className={event.status}>
+              {event.name}
               <button type="button" onClick={() => handleClick(event.id)}>
                 Unfollow
               </button>
             </div>
           ))}
-        </ul>
+        </div>
       ) : (
         <p>You are not following any events.</p>
       )}
