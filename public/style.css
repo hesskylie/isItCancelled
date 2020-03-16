@@ -1,9 +1,10 @@
 body {
   font-family: sans-serif;
+  background-color: rgb(238, 230, 230);
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 label {
@@ -18,4 +19,91 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.ongoingKey {
+  background-color: rgb(68, 190, 68);
+  padding: 20px;
+}
+
+.remoteKey {
+  background-color: rgb(57, 169, 238);
+  padding: 20px;
+}
+
+.pendingKey {
+  background-color: rgb(233, 219, 30);
+  padding: 20px;
+}
+
+.postponedKey {
+  background-color: rgb(231, 154, 12);
+  padding: 20px;
+}
+
+.cancelledKey {
+  background-color: rgb(228, 22, 22);
+  padding: 20px;
+}
+
+.ongoing {
+  margin: 2%;
+  display: flex;
+  background-color: rgb(68, 190, 68);
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.remote {
+  margin: 2%;
+  display: flex;
+  background-color: rgb(57, 169, 238);
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pending {
+  margin: 2%;
+  display: flex;
+  background-color: rgb(233, 219, 30);
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.postponed {
+  margin: 2%;
+  display: flex;
+  background-color: rgb(231, 154, 12);
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancelled {
+  margin: 2%;
+  display: flex;
+  background-color: rgb(228, 22, 22);
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
 }

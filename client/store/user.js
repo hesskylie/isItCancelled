@@ -6,6 +6,7 @@ import history from '../history'
  */
 const GET_USER = 'GET_USER'
 const REMOVE_USER = 'REMOVE_USER'
+const GOT_FOLLOW = 'GOT_FOLLOW'
 
 /**
  * INITIAL STATE
@@ -17,6 +18,7 @@ const defaultUser = {}
  */
 const getUser = user => ({type: GET_USER, user})
 const removeUser = () => ({type: REMOVE_USER})
+const gotFollow = event => ({type: GOT_FOLLOW, event})
 
 /**
  * THUNK CREATORS
@@ -53,6 +55,16 @@ export const logout = () => async dispatch => {
     history.push('/login')
   } catch (err) {
     console.error(err)
+  }
+}
+
+export const followEvent = id => {
+  return async () => {
+    try {
+      await axios.post('/api/users', {id})
+    } catch (err) {
+      console.error(err)
+    }
   }
 }
 
