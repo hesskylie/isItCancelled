@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "stay updated on events cancelled by covid-19",
   "engines": {
-    "node": ">= 7.0.0"
+    "node": ">= 15.4.0"
   },
   "main": "index.js",
   "scripts": {
