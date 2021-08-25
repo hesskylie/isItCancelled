@@ -31,7 +31,7 @@ export const Attractions = props => {
             {props.attractions.map(attraction => (
               <div key={attraction.id} className={attraction.status}>
                 {attraction.link ? (
-                  <a href={attraction.link} target="_blank">
+                  <a href={attraction.link} target="_blank" rel="noreferrer">
                     {attraction.name}
                   </a>
                 ) : (

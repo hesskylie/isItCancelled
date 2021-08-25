@@ -31,7 +31,7 @@ export const Music = props => {
             {props.music.map(music => (
               <div key={music.id} className={music.status}>
                 {music.link ? (
-                  <a href={music.link} target="_blank">
+                  <a href={music.link} target="_blank" rel="noreferrer">
                     {music.name}
                   </a>
                 ) : (

@@ -31,7 +31,7 @@ export const Sports = props => {
             {props.sports.map(sport => (
               <div key={sport.id} className={sport.status}>
                 {sport.link ? (
-                  <a href={sport.link} target="_blank">
+                  <a href={sport.link} target="_blank" rel="noreferrer">
                     {sport.name}
                   </a>
                 ) : (

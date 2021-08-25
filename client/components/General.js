@@ -31,7 +31,7 @@ export const General = props => {
             {props.general.map(general => (
               <div key={general.id} className={general.status}>
                 {general.link ? (
-                  <a href={general.link} target="_blank">
+                  <a href={general.link} target="_blank" rel="noreferrer">
                     {general.name}
                   </a>
                 ) : (

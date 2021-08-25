@@ -31,7 +31,7 @@ export const Education = props => {
             {props.education.map(education => (
               <div key={education.id} className={education.status}>
                 {education.link ? (
-                  <a href={education.link} target="_blank">
+                  <a href={education.link} target="_blank" rel="noreferrer">
                     {education.name}
                   </a>
                 ) : (

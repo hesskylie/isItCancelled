@@ -31,7 +31,7 @@ export const Conferences = props => {
             {props.conferences.map(conference => (
               <div key={conference.id} className={conference.status}>
                 {conference.link ? (
-                  <a href={conference.link} target="_blank">
+                  <a href={conference.link} target="_blank" rel="noreferrer">
                     {conference.name}
                   </a>
                 ) : (
